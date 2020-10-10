@@ -10,7 +10,7 @@ void Donut::runSimulation() {
     cout << "Do you want to insert a file or randomly populate the grid? ('file' 'populate')?" << endl; // Asks user for their input
     cin >> configuration; // Finds the wanted configuration
     if (configuration == "populate") {
-      populateGrid(); // Populates the grid,
+      populateNewGrid(); // Populates the grid,
       validInput = true;
     }
     else if (configuration == "file") {
@@ -107,7 +107,7 @@ int Donut::donutNeighborCount(int posX, int posY) {
   return aliveCount;
 }
 
-void Donut::populateNewGrid(int posX, int posY) {
+void Donut::populateNewGrid() {
   populationDensity = -1;
   cout << "Enter Grid Size X Axis: "; // Gets the x Axis from the user
   cin >> xAxis;

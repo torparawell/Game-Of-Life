@@ -63,7 +63,7 @@ class Donut : public Game {
 
     void runSimulation(); // Runs the simulation
     void update(); // Updates the simulation
-    void populateNewGrid(int, int); // Populates the new grid full of 0s
+    void populateNewGrid(); // Populates the new grid full of 0s
     void printGrid(); // Prints new grid
     void shadowGridTransfer(); // Shadow transfers grid to update it to the game board.
     void determineState(int posX, int posY); // determines the state of the current cell
